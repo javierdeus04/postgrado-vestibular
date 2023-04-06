@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 ul, ol {
@@ -63,9 +64,25 @@ header {
     font-size: 1rem;
 }
 
-.nav-header {
+.navbar {
     display: flex;
-    gap: 20px;
+}
+
+.offcanvas-header {
+    background-color: #227000;
+}
+
+.offcanvas-header h5 {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.nav-header {
+    display: none;
 }
 
 .nav-header li {
@@ -122,17 +139,23 @@ header {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1em;
+}
+
+.footer h4 {
+    margin-top: 10px;
 }
 
 .logos-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1em;
 }
 
 .logos-footer img {
-    width: 200px;
+    width: 75vw;
 }
 
 
@@ -147,16 +170,7 @@ header {
     font-size: 1.1rem;
 }
 
-.multimedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
- }
-
- .multimedia img {
-    height: 250px;
- }
+.multimedia img
 
 
 /* ----- OBJETIVOS y MODALIDAD ----- */

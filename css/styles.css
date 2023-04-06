@@ -1,0 +1,298 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #72bb53;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 249, 239);
+}
+
+h1, h2, h3, h4, h5{
+    text-align: center;
+    color: rgb(255, 249, 239);
+}
+
+h1 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-shadow: black 0.1em 0.1em;
+}
+
+body {
+    background-color: #227000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* ----- COMPONENTES ---- */
+
+/* header */
+
+header {
+    background-image: url("../img/fondoheader.jpg");
+    background-size: cover;
+
+    height: 60vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.titulo-header h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.nav-header {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-header li {
+    text-align: center;
+    font-weight: 600;
+    background-color: white;
+    border: 0.1em solid #72bb53;
+    border-radius: 1em;
+    width: 80px;
+    padding: 0.2em 1em;
+}
+
+.nav-header li:hover {
+    border-color: rgb(255, 249, 239);;
+    background-color: #72bb53;
+}    
+
+
+/* body */
+
+.seccion-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+ }
+
+ .seccion-principal h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.contenedor {
+    background-color: #ccffc2;
+    border-radius: 0.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+ .subtitulos-seccion {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-left: 0.3em;
+ }
+
+
+ /* footer */
+
+.footer {
+    background-color: black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.logos-footer img {
+    width: 200px;
+}
+
+
+
+ /* ----- INDEX -----*/
+
+ .contenedor p {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
+    line-height: 1.6em;
+    font-size: 1.1rem;
+}
+
+.multimedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+ }
+
+ .multimedia img {
+    height: 250px;
+ }
+
+
+/* ----- OBJETIVOS y MODALIDAD ----- */
+
+.contenedor ul {
+    line-height: 1.3em;
+    font-size: 1.4rem;
+}
+
+.contenedor ul li {
+    border: #72bb53 solid 1.5px;
+    font-size: 1.2rem;
+    margin: 1em;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 1em;
+    padding-right: 1em; 
+    text-align: left;
+}
+
+
+
+/* ----- EQUIPO -----*/
+
+.subtitulos-seccion-equipo {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.img-equipo img {
+    height: 200px;
+}
+
+.resp-academicos {
+    display: flex;
+    flex-flow: row /* wrap */;
+    gap: 20px;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.facilitadores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    gap: 20px;
+}
+
+.resp-perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+}
+
+.fac-perfil {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.fac-perfil:hover {
+    color: #00b84c;
+    cursor: pointer;
+}
+
+.fac-perfil ul {
+    list-style-type: disc;
+    line-height: 1em;
+}
+
+.fac-perfil ul li {
+    text-decoration: underline;
+    border: none;
+    font-size: 1.2rem;
+    margin: 1.2em;
+    padding-left: 0em; 
+}
+
+
+/* ----- CONTACTO ----- */
+
+.titulos-seccion-contacto {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.contacto-inscripciones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto-consultas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: white;
+    color: #227000;
+    border: solid 1px #227000;
+    padding: 0.2em 1em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #227000;
+}
+
+
+
+
+ 

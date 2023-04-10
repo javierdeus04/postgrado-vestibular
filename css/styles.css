@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5{
 }
 
 h1 {
-    font-size: 1.3rem;
     text-transform: uppercase;
     text-shadow: black 0.1em 0.1em;
 }
@@ -42,9 +41,10 @@ span {
 
 /* header */
 
-header {
+.header {
     background-image: url("../img/fondoheader.jpg");
     background-size: cover;
+    background-position: center;
 
     height: 60vh;
     
@@ -85,20 +85,70 @@ header {
     display: none;
 }
 
-.nav-header li {
-    text-align: center;
-    font-weight: 600;
-    background-color: white;
-    border: 0.1em solid #72bb53;
-    border-radius: 1em;
-    width: 80px;
-    padding: 0.2em 1em;
+
+
+.navbar-toggler {
+    background-color: #227000a6;
+    border: solid  #ffffff71 2px;
+    border-radius: 15px;
 }
 
-.nav-header li:hover {
-    border-color: rgb(255, 249, 239);;
-    background-color: #72bb53;
-}    
+@media (min-width: 768px) {
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+    }
+
+    .logo img {
+        height: 250px;
+    }
+
+    .logo {
+        grid-row: span 2;
+        justify-self: end;
+    }
+    
+    .titulo-header h2 {
+        font-size: 1.5rem
+    }
+
+    .titulo-header {
+        align-self: flex-end;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu {
+        align-self: flex-start;
+    }
+
+    .nav-header {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .nav-header li {
+        text-align: center;
+        font-weight: 600;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid #72bb53;
+        border-radius: 1em;
+        width: 8em;
+        padding: 0.2em 1em;
+    }
+    
+    .nav-header li:hover {
+        border-color: rgb(255, 249, 239);;
+        background-color: #72bb53;
+    }
+   
+}
 
 
 /* body */
@@ -155,7 +205,18 @@ header {
 }
 
 .logos-footer img {
-    width: 75vw;
+    width: 60vw;
+}
+
+@media (min-width: 768px) {
+
+    .logos-footer {
+        flex-direction: row;
+    }
+
+    .logos-footer img {
+        width: 250px;
+    }
 }
 
 
@@ -170,7 +231,25 @@ header {
     font-size: 1.1rem;
 }
 
-.multimedia img
+.separador {
+    display: block;
+    background-color: #a1602b;
+    color: rgb(212, 181, 139);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+
+    .imagenes {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel {
+        width: 767px;
+    }
+}
 
 
 /* ----- OBJETIVOS y MODALIDAD ----- */

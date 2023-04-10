@@ -29,6 +29,7 @@ h1 {
 }
 
 body {
+    background-image: url("../img/17.png");
     background-color: #227000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -97,7 +98,8 @@ span {
 
     .header {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr;
         justify-items: center;
     }
 
@@ -122,12 +124,9 @@ span {
         display: none;
     }
 
-    .menu {
-        align-self: flex-start;
-    }
-
     .nav-header {
         display: flex;
+        flex-wrap: wrap;
         gap: 5px;
         margin-bottom: 0px;
         padding: 0px;
@@ -166,7 +165,7 @@ span {
 }
 
 .contenedor {
-    background-color: #ccffc2;
+    background-color: #ccffc286;
     border-radius: 0.8em;
     margin-left: 1em;
     margin-right: 1em;
@@ -179,6 +178,41 @@ span {
     color: rgb(0, 0, 0);
     text-align: left;
     padding-left: 0.3em;
+ }
+
+ .decoracion {
+    display: none;
+}
+
+ @media (min-width: 768px) {
+    .seccion-principal {
+        display: grid;
+        grid-template-columns: 1fr 5fr 3fr 1fr;
+        grid-template-rows: 1fr 10fr;
+    }
+
+    .seccion-principal h3 {
+        grid-column: span 4;
+        align-self: center;
+    }
+
+    .contenedor {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .decoracion {
+        display: block;
+        grid-row: 2;
+        grid-column: 3;
+        align-self: center;
+    }
+
+    .decoracion img {
+        width: 20em;;
+    }
+
+   
  }
 
 
@@ -212,6 +246,7 @@ span {
 
     .logos-footer {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .logos-footer img {
@@ -240,6 +275,7 @@ span {
     padding: 20px;
 }
 
+
 @media (min-width: 768px) {
 
     .imagenes {
@@ -249,6 +285,12 @@ span {
     .carousel {
         width: 767px;
     }
+
+    .carousel-inner {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
 }
 
 
@@ -348,16 +390,17 @@ span {
 
 .contacto {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: column;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 1em;
+    gap: 50px;
 }
 
 .contacto-inscripciones {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .contacto-consultas {
@@ -383,6 +426,26 @@ span {
     cursor: pointer;
     color: #ffffff;
     background-color: #227000;
+}
+
+.contacto-instagram {
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .contacto-instagram {
+        grid-column: 3;
+        align-self: center;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        gap: 50px;
+    }
 }
 
 

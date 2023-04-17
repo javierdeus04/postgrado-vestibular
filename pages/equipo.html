@@ -12,40 +12,78 @@
 
 <body>
     <header class="header">
-        <div class="logo">
+        <div class="header-logo">
             <a href="../index.html"><img src="../img/logovestibular.png" alt="logo rehabilitacion vestibular trastornos del equilibrio curso de postgrado"></a>
         </div>
 
-        <div class="titulo-header">            
+        <div class="header-titulo">            
             <h1>Rehabilitación vestibular y alteraciones del equilibrio</h1>   
             <h2>Curso superior nivel de postgrado</h2>
         </div>
 
         <nav>
-            <ul class="nav-header">
-                <a href="../index.html"><li>Principal</li></a>
-                <a href="./objetivos.html"><li>Objetivos</li></a>
-                <a href="./modalidad.html"><li>Modalidad</li></a>
-                <a href="./contacto.html"><li>Contacto</li></a>
+            <div class="navbar .bg-transparent">
+                <div class="container-fluid" data-bs-theme="dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header" data-bs-theme="dark">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Presentación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/objetivos.html">Objetivos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/modalidad.html">Modalidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/equipo.html">Equipo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header-menu">
+                <a href="../index.html"><li class="header__item">Presentación</li></a>
+                <a href="../pages/objetivos.html"><li >Objetivos</li></a>
+                <a href="../pages/modalidad.html"><li>Modalidad</li></a>
+                <a href="../pages/equipo.html"><li>Equipo</li></a>
+                <a href="../pages/contacto.html"><li>Contacto</li></a>
             </ul>
-        </nav>               
+        </nav>
     </header>
 
     <main>
-        <section class="seccion-principal">
+        <section class="equipo">
             <h3>Equipo</h3>
             
-            <div class="contenedor">
-                <h4 class="subtitulos-seccion-equipo">Responsables académicos</h4>
+            
+                <h4 class="equipo-titulo">Responsables académicos</h4>
                 
-                <div class="resp-academicos">
-                    <div class="resp-perfil">
+                <div class="equipo-contenedor">
+                    <div class="resp-acad">
+                        <div class="img-equipo">
+                            <img src="../img/martinbellever.png" alt="">
+                        </div>
                         <div>
-                            <p>
-                                <ul>
-                                    <li>Lic. Klgo. Ftra. Martín Bellver MN. 8106</li>
-                                    <li>Co-Creador/Director Académico</li>
-                                </ul>
+                            <ul>
+                                <li>Lic. Klgo. Ftra. Martín Bellver MN. 8106</li>
+                                <li>Co-Creador/Director Académico</li>
+                            </ul>
+                            <p class="parrafo">
+                                
                                 Martín Bellver es Licenciado en Kinesiología y Fisiatría graduado en la Universidad de Buenos Aires.
                                 Es jefe de trabajos prácticos en la Cátedra de Clínica Fisiátrica de la escuela de Kinesiología de la Universidad de Buenos Aires.
                                 En el año 2003 obtuvo su Certificación en Rehabilitación Vestibular de la Universidad de Emory en Estados Unidos.
@@ -53,21 +91,21 @@
                                 Es el autor del libro: Manual del Mareo, Guía para Entender el Mareo el Vértigo y cómo Recuperar el Equilibrio.
                             </p>
                         </div>
-                        <div class="img-equipo">
-                            <img src="../img/martinbellever.png" alt="">
-                        </div>
                     </div>
 
-                    <div class="resp-perfil">
+                    <div class="resp-acad">
+
                         <div class="img-equipo">
                             <img src="../img/marianoaguilo.png" alt="">
                         </div>
+                        
                         <div>
-                            <p>
-                                <ul>
-                                    <li>Lic. Klgo. Ftra. Mariano Pablo Aguiló MN. 9929</li>
-                                    <li>Co-Creador/Coordinar Gral/Jefe de Trabajos Prácticos</li>
-                                </ul>
+                            <ul>
+                                <li>Lic. Klgo. Ftra. Mariano Pablo Aguiló MN. 9929</li>
+                                <li>Co-Creador/Coordinar Gral/Jefe de Trabajos Prácticos</li>
+                            </ul>
+                            <p class="parrafo">
+                                
                                 Mariano Aguiló es Licenciado en Kinesiología Fisiatría graduado en la Universidad de Buenos Aires.
                                 Hace más de 15 años se especializa en el tratamiento de pacientes con alteraciones vestibulares e inestabilidad y en la rehabilitación de lesiones deportivas.
                                 Neurocognitivista y especialista en medicina del estrés y pine. Docente de la Universidad de Bs As ( UBA). Docente de la Universidad Favaloro.
@@ -76,74 +114,177 @@
                             </p>
                         </div>
                         
-                    </div>
-                </div>
-
-                <h4 class="subtitulos-seccion-equipo">Facilitadores</h4>
-
-                <div class="facilitadores">
-                    
-                    <div class="fac-perfil">
-                        <div class="img-equipo">
-                            <img src="../img/claudiaadamo.png" alt="">
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Dra. Claudia Adamo (Arg.)</li>
-                                <li>Médica Neuróloga</li>
-                            </ul>  
-                        </div>
-                    </div>
-
-                    <div class="fac-perfil">
-                        <div class="img-equipo">
-                            <img src="../img/gabrielagrinstein.png" alt="">
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Dra. Gabriela Grinstein (Arg.)</li>
-                                <li>Médica Otorrinolaringóloga</li>
-                            </ul>
-                        </div>
                         
                     </div>
-
-                    <div class="fac-perfil">
-                        <div class="img-equipo">
-                            <img src="../img/jaquelinecuellar.png" alt="">
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Aud. Jacqueline Cuellar Saavedra (Col.)</li>
-                                <li>Audióloga</li>
-                            </ul>  
-                        </div>
-                    </div>
-
-                    <div class="fac-perfil">
-                        <div class="img-equipo">
-                            <img src="../img/claudiacandelot.png" alt="">
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Lic. Claudia Candelot (Bra.)</li>
-                                <li>Audióloga</li>
-                            </ul>  
-                        </div>
-                    </div>
-
                 </div>
 
-            </div>
+                <h4 class="equipo-titulo">Facilitadores</h4>
+
+                <div class="fac-contenedor">
+
+                    <div class="facilitadores">
+                        
+                        <div class="perfil">
+                            <div class="img-equipo">
+                                <img src="../img/claudiaadamo.png" alt="">
+                            </div>
+                            <div>
+                                <a data-bs-toggle="collapse" href="#claudia-adamo" aria-expanded="false" aria-controls="claudia-adamo">
+                                <ul>
+                                    <li>Dra. Claudia Adamo (Arg.)</li>
+                                    <li>Médica Neuróloga</li>
+                                </ul>
+                                </a>  
+                            </div>
+                            <div class="collapse facilitadores-info-mobile" id="claudia-adamo">
+                                <div class="card card-body">
+                                    <p>
+                                        Claudia Adamo es médica neuróloga graduada en la Universidad de Buenos Aires. Se especializa en el tratamiento de disfunciones
+                                        vestibulares centrales. Durante más de 20 años se desempeñó como docente y encargada del servicio de neuro-otología del hospital
+                                        Ramos Mejía. Ha participado en numerosos congresos, disertando sobre alteraciones vestibulares centrales. Actualmente trabaja
+                                        en el área de neuro-otología del Hospital de Rehabilitación Manuel Roca y en el Instituto de Neurología Buenos Aires.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="perfil">
+                            <div class="img-equipo">
+                                <img src="../img/gabrielagrinstein.png" alt="">
+                            </div>
+                            <div>
+                                <a data-bs-toggle="collapse" href="#gabriela-grinstein" aria-expanded="false" aria-controls="gabriela-grinstein">
+                                <ul>
+                                    <li>Dra. Gabriela Grinstein (Arg.)</li>
+                                    <li>Médica Otorrinolaringóloga</li>
+                                </ul>
+                                </a>
+                            </div>
+                            <div class="collapse facilitadores-info-mobile" id="gabriela-grinstein">
+                                <div class="card card-body">
+                                    <p>
+                                        <span>2000 – 2006:</span> Estudios Universitarios, Carrera de Medicina. Se obtiene título de Médica otorgado por la Universidad de Ciencias
+                                        Empresariales y Sociales. Promedio general de la carrera: 8,32.<br>
+                                        <span>2007 – 2011:</span> Residencia completa en ORL reconocida UBA, Hospital Cesar Milstein(ex Hospital Francés).<br>
+                                        <span>06/2011 – 06/2012:</span> Jefe de Residentes Servicio de ORL Hospital Cesar Milstein (Ex Hospital Francés).<br>
+                                        <span></span>2009 – 2012: Curso de especialista Universidad de Buenos Aires. Título de Especialista en Otorrinolaringología otorgado por la
+                                        Universidad de Buenos Aires.<br>
+                                        <span>03/2021 – 12/ 2022:</span> Maestría en Neurociencias UNAJ-Conicet. ACTIVIDAD ASISTENCIAL.<br>
+                                        <span>06/2007 – 05/2011:</span> Residente de Servicio de ORL. Hospital Cesar Milstein (Ex Hospital Francés).<br>
+                                        <span>10/2011 – 2019:</span> Médica de Planta Servicio ORL Sanatorio Güemes; responsable área Otoneurología.<br>
+                                        <span>2012 – Actualidad:</span> Práctica privada en consultorio particular.<br>
+                                        <span>03/2016 – Actualidad:</span> Médica Staff, equipo de Neuro Otología del Instituto de Neurociencias de Buenos Aires ( INEBA).<br>
+                                        <span>04/2021 – Actualidad:</span> Medica Staff equipo de Neuro Otología del Instituto Otorrinolaringológico Arauz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="perfil">
+                            <div class="img-equipo">
+                                <img src="../img/jaquelinecuellar.png" alt="">
+                            </div>
+                            <div>
+                                <a data-bs-toggle="collapse" href="#jaqueline-cuellar" aria-expanded="false" aria-controls="jaqueline-cuellar">
+                                <ul>
+                                    <li>Aud. Jacqueline Cuellar Saavedra (Col.)</li>
+                                    <li>Audióloga</li>
+                                </ul>
+                                </a>  
+                            </div>
+                            <div class="collapse facilitadores-info-mobile" id="jaqueline-cuellar">
+                                <div class="card card-body">
+                                    <p>
+                                        Licenciada en Fonoaudiología, especialista en Audiología, especialista en seguridad y salud en el trabajo Master en audiología
+                                        Clínica Docente en la Universidad Nacional de Colombia y en la Universidad Maria Cano de Medellín.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="perfil">
+                            <div class="img-equipo">
+                                <img src="../img/claudiacandelot.png" alt="">
+                            </div>
+                            <div>
+                                <a data-bs-toggle="collapse" href="#claudia-candelot" aria-expanded="false" aria-controls="claudia-candelot">
+                                <ul>
+                                    <li>Lic. Claudia Candelot (Bra.)</li>
+                                    <li>Audióloga</li>
+                                </ul>  
+                                </a>
+                            </div>
+                            <div class="collapse facilitadores-info-mobile" id="claudia-candelot">
+                                <div class="card card-body">
+                                    <p>
+                                        Licenciada en Fonoaudiología, especialista en Audiología, Licenciada en Comunicación social y docente de cursos de posgrado 
+                                        (CEDAP-RJ).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="facilitadores-info-desktop">
+
+                            <div class="collapse" id="claudia-adamo">
+                                <div class="card card-body">
+                                    <p>
+                                        Claudia Adamo es médica neuróloga graduada en la Universidad de Buenos Aires. Se especializa en el tratamiento de disfunciones
+                                        vestibulares centrales. Durante más de 20 años se desempeñó como docente y encargada del servicio de neuro-otología del hospital
+                                        Ramos Mejía. Ha participado en numerosos congresos, disertando sobre alteraciones vestibulares centrales. Actualmente trabaja
+                                        en el área de neuro-otología del Hospital de Rehabilitación Manuel Roca y en el Instituto de Neurología Buenos Aires.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="collapse" id="gabriela-grinstein">
+                                <div class="card card-body">
+                                    <p>
+                                        <span>2000 – 2006:</span> Estudios Universitarios, Carrera de Medicina. Se obtiene título de Médica otorgado por la Universidad de Ciencias
+                                        Empresariales y Sociales. Promedio general de la carrera: 8,32.<br>
+                                        <span>2007 – 2011:</span> Residencia completa en ORL reconocida UBA, Hospital Cesar Milstein(ex Hospital Francés).<br>
+                                        <span>06/2011 – 06/2012:</span> Jefe de Residentes Servicio de ORL Hospital Cesar Milstein (Ex Hospital Francés).<br>
+                                        <span></span>2009 – 2012: Curso de especialista Universidad de Buenos Aires. Título de Especialista en Otorrinolaringología otorgado por la
+                                        Universidad de Buenos Aires.<br>
+                                        <span>03/2021 – 12/ 2022:</span> Maestría en Neurociencias UNAJ-Conicet. ACTIVIDAD ASISTENCIAL.<br>
+                                        <span>06/2007 – 05/2011:</span> Residente de Servicio de ORL. Hospital Cesar Milstein (Ex Hospital Francés).<br>
+                                        <span>10/2011 – 2019:</span> Médica de Planta Servicio ORL Sanatorio Güemes; responsable área Otoneurología.<br>
+                                        <span>2012 – Actualidad:</span> Práctica privada en consultorio particular.<br>
+                                        <span>03/2016 – Actualidad:</span> Médica Staff, equipo de Neuro Otología del Instituto de Neurociencias de Buenos Aires ( INEBA).<br>
+                                        <span>04/2021 – Actualidad:</span> Medica Staff equipo de Neuro Otología del Instituto Otorrinolaringológico Arauz.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jaqueline-cuellar">
+                                <div class="card card-body">
+                                    <p>
+                                        Licenciada en Fonoaudiología, especialista en Audiología, especialista en seguridad y salud en el trabajo Master en audiología
+                                        Clínica Docente en la Universidad Nacional de Colombia y en la Universidad Maria Cano de Medellín.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="collapse" id="claudia-candelot">
+                                <div class="card card-body">
+                                    <p>
+                                        Licenciada en Fonoaudiología, especialista en Audiología, Licenciada en Comunicación social y docente de cursos de posgrado 
+                                        (CEDAP-RJ).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
         </section>
     </main>
 
     <footer class="footer">
-        <h4 class="titulo">Avalan</h4>
+        <h4>Avalan</h4>
         
-        <div class="logos-footer">
+        <div class="footer-logos">
             <img src="../img/logoafu.jpg" alt="">
             <img src="../img/logoasofono.jpg" alt="">
+            <img src="../img/logockf.jpg" alt="">
+            <img src="../img/logobalance.jpg" alt="">
         </div>
 
         <h5 class="titulo">Desarrollado por Javier Deus</h5>

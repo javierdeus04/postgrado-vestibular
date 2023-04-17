@@ -12,55 +12,95 @@
 
 <body>
     <header class="header">
-        <div class="logo">
+        <div class="header-logo">
             <a href="../index.html"><img src="../img/logovestibular.png" alt="logo rehabilitacion vestibular trastornos del equilibrio curso de postgrado"></a>
         </div>
 
-        <div class="titulo-header">            
+        <div class="header-titulo">            
             <h1>Rehabilitación vestibular y alteraciones del equilibrio</h1>   
             <h2>Curso superior nivel de postgrado</h2>
         </div>
 
         <nav>
-            <ul class="nav-header">
-                <a href="../index.html"><li>Principal</li></a>
-                <a href="./objetivos.html"><li>Objetivos</li></a>
-                <a href="./equipo.html"><li>Equipo</li></a>
-                <a href="./contacto.html"><li>Contacto</li></a>
+            <div class="navbar .bg-transparent">
+                <div class="container-fluid" data-bs-theme="dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header" data-bs-theme="dark">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Presentación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/objetivos.html">Objetivos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/modalidad.html">Modalidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/equipo.html">Equipo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header-menu">
+                <a href="../index.html"><li class="header__item">Presentación</li></a>
+                <a href="../pages/objetivos.html"><li >Objetivos</li></a>
+                <a href="../pages/modalidad.html"><li>Modalidad</li></a>
+                <a href="../pages/equipo.html"><li>Equipo</li></a>
+                <a href="../pages/contacto.html"><li>Contacto</li></a>
             </ul>
-        </nav>               
+        </nav>
     </header>
 
     <main>
-        <section class="seccion-principal">
-            <h3 class="titulo">Modalidad</h3>
+        <section class="modalidad">
+            <h3>Modalidad</h3>
             
-            <div class="contenedor">
-                <h4 class="subtitulos-seccion">Carga horaria</h4>
+            <div class="contenedor-uno">
+                <h4>Carga horaria:</h4>
                 <ul>
                     <li>6 Módulos totales. 157 hs cátedra (40 hs teóricas, 60 hs prácticas, 57 hs trabajos prácticos y Trabajo de Integración Final)</li>
                 </ul>
-                <h4 class="subtitulos-seccion">Modalidad de cursada</h4>
+                <h4>Modalidad de cursada:</h4>
                 <ul>
                     <li>4 Módulos online en vivo/offline* de fin de semana de julio a diciembre - Sábados de 8. 30 a 18 hs, domingos de 8.30 a 15 hs.</li>
                     <li>1 Módulo presencial intensivo o streaming* (en vivo) de fin de semana de 3 días (viernes, sábado y domingo) de 9 a 17 hs.</li>
                     <li>Módulo on line de entrega y defensa del Tif</li>
                 </ul>
-                <h4 class="subtitulos-seccion">*Modalidad 100% offline</h4>
+                <h4>*Modalidad 100% offline:</h4>
                 <ul>
                     <li>Si optas por esta modalidad, recibirás la grabación el lunes  siguiente a cada módulo online.</li>
                     <li>Es imprescindible completar la entrega de cuestionarios de cada módulo, rendir y aprobar el examen final en línea y la entrega del TIF.</li>
                 </ul>            
             </div>
+
+            <div class="decoracion">
+                <img src="../img/modalidad.png" alt="">
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <h4 class="titulo">Avalan</h4>
+        <h4>Avalan</h4>
         
-        <div class="logos-footer">
+        <div class="footer-logos">
             <img src="../img/logoafu.jpg" alt="">
             <img src="../img/logoasofono.jpg" alt="">
+            <img src="../img/logockf.jpg" alt="">
+            <img src="../img/logobalance.jpg" alt="">
         </div>
 
         <h5 class="titulo">Desarrollado por Javier Deus</h5>

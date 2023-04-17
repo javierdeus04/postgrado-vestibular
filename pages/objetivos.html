@@ -12,18 +12,52 @@
 
 <body>
     <header class="header">
-        <div class="logo">
+        <div class="header-logo">
             <a href="../index.html"><img src="../img/logovestibular.png" alt="logo rehabilitacion vestibular trastornos del equilibrio curso de postgrado"></a>
         </div>
 
-        <div class="titulo-header">            
+        <div class="header-titulo">            
             <h1>Rehabilitación vestibular y alteraciones del equilibrio</h1>   
             <h2>Curso superior nivel de postgrado</h2>
         </div>
 
         <nav>
-            <ul class="nav-header">
-                <a href="../index.html"><li>Principal</li></a>
+            <div class="navbar .bg-transparent">
+                <div class="container-fluid" data-bs-theme="dark">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header" data-bs-theme="dark">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Presentación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./objetivos.html">Objetivos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./modalidad.html">Modalidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./equipo.html">Equipo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header-menu">
+                <a href="../index.html"><li class="header__item">Principal</li></a>
+                <a href="./objetivos.html"><li >Objetivos</li></a>
                 <a href="./modalidad.html"><li>Modalidad</li></a>
                 <a href="./equipo.html"><li>Equipo</li></a>
                 <a href="./contacto.html"><li>Contacto</li></a>
@@ -32,16 +66,18 @@
     </header>
 
     <main>
-        <section class="seccion-principal">
+        <section class="objetivos">
             <h3>Objetivos</h3>
             
-            <div class="contenedor">
+            <div class="contenedor-uno">
                 <ul>
                     <li>Brindar herramientas para la evaluación, diagnóstico y tratamiento de las disfunciones vestibulares y los trastornos del equilibrio.</li>
                     <li>Brindar conocimiento de los estudios complementarios del aparato vestibular.</li>
                     <li>Enseñar el uso correcto de maniobras y ejercicios en el proceso de rehabilitación vestibular.</li>
                 </ul>
-                <h4 class="subtitulos-seccion">Competencias a adquirir:</h4>
+            </div>
+            <h4>Competencias a adquirir:</h4>
+            <div class="contenedor-dos">
                 <ul>
                     <li>Tener nociones avanzadas de anatomía y fisiología del sistema vestibular.</li>
                     <li>Saber realizar una correcta anamnesis del paciente con mareo y trastornos de equilibrio.</li>
@@ -54,16 +90,26 @@
                     <li>Realizar una rehabilitación dinámica y progresiva basada en evidencia científica.</li>
                 </ul>
             </div>
+
+            <div class="decoracion">
+                <img src="../img/objetivos.png" alt="">
+            </div>
+
+            <div class="decoracion-dos">
+                <img src="../img/competencias.png" alt="">
+            </div>
             
         </section>
     </main>
 
     <footer class="footer">
-        <h4 class="titulo">Avalan</h4>
+        <h4>Avalan</h4>
         
-        <div class="logos-footer">
+        <div class="footer-logos">
             <img src="../img/logoafu.jpg" alt="">
             <img src="../img/logoasofono.jpg" alt="">
+            <img src="../img/logockf.jpg" alt="">
+            <img src="../img/logobalance.jpg" alt="">
         </div>
 
         <h5 class="titulo">Desarrollado por Javier Deus</h5>

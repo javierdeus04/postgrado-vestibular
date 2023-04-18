@@ -1,0 +1,45 @@
+@import "./variables";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: $body-image;
+    background-color: $background-color;
+    font-family: $body-font-family;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        color: $secondary-color
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    color: $secondary-color;
+}
+
+p {
+    text-align: justify;
+    margin: 0px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.primary-container {
+    display: flex;
+    flex-direction: column;
+}

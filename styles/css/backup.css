@@ -1,4 +1,4 @@
-* {
+/* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -20,27 +20,30 @@ a:hover {
     color: rgb(255, 249, 239);
 }
 
+
 h1, h2, h3, h4, h5{
     text-align: center;
     color: rgb(255, 249, 239);
 }
 
-h1 {
+*/
+
+/* h1 {
     text-transform: uppercase;
     text-shadow: black 0.1em 0.1em;
-}
+} */
 
-body {
+/* body {
     background-image: url("../img/17.png");
     background-color: #227000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
-span {
+/*span {
     font-weight: bold;
 }
 
-p {
+/*p {
     text-align: justify;
     margin: 0px;
 }
@@ -50,7 +53,7 @@ p {
 
 /* header */
 
-.header {
+/*.header {
     background-image: url("../img/fondoheader.jpg");
     background-size: cover;
     background-position: center;
@@ -65,42 +68,42 @@ p {
 
 .header-logo img {
     height: 150px;
-}
+}*/
 
-.header-titulo h2 {
+/* .header-titulo h2 {
     font-style: italic;
     text-transform: uppercase;
     font-size: 1rem;
-}
+} */
 
 .navbar {
     display: flex;
 }
 
-.offcanvas-header {
+/* .offcanvas-header {
     background-color: #227000;
-}
+} */
 
-.offcanvas-header h5 {
+/* .offcanvas-header h5 {
     color: rgb(255, 255, 255);
-}
+} */
 
-.nav-link {
+/* .nav-link {
     color: aliceblue;
     font-size: 1.2rem;
-}
+} */
 
-.header-menu {
+/* .header-menu {
     display: none;
-}
+} */
 
 
 
-.navbar-toggler {
+/* .navbar-toggler {
     background-color: #227000a6;
     border: solid  #ffffff71 2px;
     border-radius: 15px;
-}
+} */
 
 @media (min-width: 768px) {
 
@@ -507,6 +510,7 @@ p {
 
 .perfil a:hover {
     color: #558b3e;
+    cursor: pointer;
 }
 .card {
     background-color: #b3e49e77;
@@ -559,8 +563,6 @@ p {
         display: block;
     }
 
-
-
 }
 
 
@@ -589,6 +591,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
 }
 
 .contacto-consultas {

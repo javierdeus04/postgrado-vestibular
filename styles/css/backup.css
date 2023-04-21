@@ -105,45 +105,45 @@ h1, h2, h3, h4, h5{
     border-radius: 15px;
 } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
 
-    .header {
+    /* .header {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-    }
+    } */
 
-    .header-logo img {
+    /* .header-logo img {
         height: 250px;
-    }
+    } */
 
-    .header-logo {
+    /* .header-logo {
         grid-row: span 2;
         justify-self: end;
-    }
+    } */
     
-    .header-titulo h2 {
+    /* .header-titulo h2 {
         font-size: 1.5rem
-    }
+    } */
 
-    .header-titulo {
+    /* .header-titulo {
         align-self: flex-end;
-    }
+    } */
 
-    .navbar {
+    /* .navbar {
         display: none;
-    }
+    } */
 
-    .header-menu {
+    /* .header-menu {
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
         margin-bottom: 0px;
         padding: 0px;
-    }
+    } */
 
-    .header-menu li {
+    /* .header-menu li {
         text-align: center;
         font-weight: 600;
         background-color: rgb(255, 255, 255);
@@ -151,14 +151,14 @@ h1, h2, h3, h4, h5{
         border-radius: 1em;
         width: 8em;
         padding: 0.2em 1em;
-    }
+    } */
     
-    .header-menu li:hover {
+    /* .header-menu li:hover {
         border-color: rgb(255, 249, 239);;
         background-color: #72bb53;
     }
    
-}
+} */
 
 
 /* body */
@@ -226,20 +226,20 @@ h1, h2, h3, h4, h5{
 
  /* footer */
 
-.footer {
+/* .footer {
     background-color: black;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
-}
+} */
 
-.footer h4 {
+/* .footer h4 {
     margin-top: 10px;
-}
+} */
 
-.footer-logos {
+/* .footer-logos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5{
 
 .footer-logos img {
     width: 60vw;
-}
+} */
 
 @media (min-width: 768px) {
 
@@ -266,22 +266,22 @@ h1, h2, h3, h4, h5{
 
  /* ----- INDEX -----*/
 
- .principal-contenedor p {
+ /* .principal-contenedor p {
     padding-left: 1em;
     padding-right: 1em;
     text-align: justify;
     line-height: 1.6em;
     font-size: 1.1rem;
-}
+} */
 
-.separador {
+/* .separador {
     display: block;
     background-color: #a1602b;
     color: rgb(212, 181, 139);
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
-}
+} */
 
 
 @media (min-width: 768px) {

@@ -1,0 +1,32 @@
+.footer {
+    background-color: black;
+    margin-top: 1em;
+    gap: 1em;
+
+    h4 {
+        margin-top: 0.5em;
+    }
+
+    .footer-logos {
+        align-items: center;
+        img {
+            width: 50vw;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+
+        .footer-logos {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+    
+            img {
+                width: 250px;
+            }
+        }
+    }    
+}

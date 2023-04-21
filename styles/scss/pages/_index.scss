@@ -1,0 +1,36 @@
+.index {
+
+    margin-top: 0.5em;
+
+    .decoration {
+        display: none;
+    }
+}
+
+.separador {
+    display: block;
+    background-color: #5e2a00;
+    color: #f8c9a3;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .imagenes {
+        display: flex;
+        justify-content: center;
+
+        .carousel {
+            width: 767px;
+
+            .carousel-inner {
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+        }
+
+
+    }
+}
+

@@ -1,0 +1,15 @@
+@import "../base";
+
+.btn {
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: solid 1px $primary-color;
+    padding: 0.2em 1em;
+    margin-bottom: 1em;
+
+    &:hover {
+        cursor: pointer;
+        color: $secondary-color;
+        background-color: $background-color;
+    }
+}

@@ -3,12 +3,14 @@
     margin-top: 1em;
     gap: 1em;
 
-    h4 {
+    h5 {
         margin-top: 0.5em;
     }
 
     .footer-logos {
         align-items: center;
+        gap: 2em;
+        
         img {
             width: 50vw;
         }
@@ -22,8 +24,8 @@
         .footer-logos {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
-    
+            justify-content: center;
+        
             img {
                 width: 250px;
             }

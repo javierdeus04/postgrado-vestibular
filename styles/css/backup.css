@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5{
     margin-bottom: 1em;
 }
 
-.fac-contenedor {
+/* .fac-contenedor {
     background-color: #ccffc286;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5{
     margin-right: 1em;
     padding: 5px;
     margin-bottom: 1em;
-}
+} */
 
 .resp-acad {
     display: flex;
@@ -587,12 +587,12 @@ h1, h2, h3, h4, h5{
     gap: 50px;
 }
 
-.contacto-inscripciones {
+/* .contacto-inscripciones {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
-}
+} */
 
 .contacto-consultas {
     display: flex;

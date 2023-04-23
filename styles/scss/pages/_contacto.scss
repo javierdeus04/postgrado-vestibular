@@ -1,0 +1,31 @@
+@import "../base";
+
+.contacto-inscripciones {
+    @extend .scheme;
+    align-items: center;
+    padding: 1em;
+}
+
+.contacto-consultas {
+    @extend .contacto-inscripciones;
+
+    .campo-formulario {
+        @extend .scheme;
+        align-self: normal;
+        gap: 0;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    .contacto-consultas {
+        .campo-formulario {
+            text-align: left;
+        }
+    }
+}
+
+

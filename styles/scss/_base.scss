@@ -1,11 +1,13 @@
 @import "./variables";
 
+/* // RESETEO // */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
+/* // ETIQUETAS // */
 body {
     background-image: $body-image;
     background-color: $background-color;
@@ -36,6 +38,7 @@ span {
     font-weight: bold;
 }
 
+/* // CONTENEDORES GENERALES // */
 .scheme {
     display: flex;
     flex-direction: column;    
@@ -76,6 +79,7 @@ span {
     }
 }
 
+/* Estilos Desktop */
 @media (min-width: 768px) {
     .index {
         display: grid;

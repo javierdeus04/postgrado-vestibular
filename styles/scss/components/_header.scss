@@ -1,5 +1,5 @@
-@import "../base";
-
+/* // ELEMENTOS PROPIOS DEL HEADER // */
+/* Maquetacion */
 .header-scheme {
     display: flex;
     flex-direction: column;
@@ -15,12 +15,14 @@
     justify-content: space-evenly;
     align-items: center;
 
+    /* Estilos Logo */
     .header-logo {
         img {
             height: 150px;
         }
     }
 
+    /* Estilos Titulo */
     .header-titulo {
         text-transform: uppercase;
 
@@ -34,7 +36,8 @@
             font-size: 1rem;
         }
     }
-
+    
+    /* Estilos Menu Hamburguesa */
     .navbar {
 
         .navbar-toggler {
@@ -62,19 +65,23 @@
             }
         }
     
+    /* Estilos Menu Lista */    
     .header-menu {
         display: none;
         }
 }
 
+/* Estilos Desktop */
 @media (min-width: 768px) {
 
+    /* Maquetacion */
     .header {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
 
+        /* Estilos Logo */
         .header-logo {
             grid-row: span 2;
             justify-self: end;
@@ -84,6 +91,7 @@
             }
         }
 
+         /* Estilos Titulo */
         .header-titulo {
 
             align-self: flex-end;
@@ -93,10 +101,12 @@
             }
         }
 
+         /* Estilos Menu Hamburguesa */
         .navbar {
             display: none;
         }
 
+         /* Estilos Menu Lista */
         .header-menu {
             display: flex;
             flex-wrap: wrap;
@@ -107,10 +117,6 @@
                 font-weight: 600;
                 border-radius: 1em;
                 width: 8em;
-
-                &:hover {
-                    border-color: $secondary-color;
-                }
             }
         }    
     } 

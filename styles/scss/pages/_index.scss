@@ -1,0 +1,34 @@
+.separador {
+    display: block;
+    width: 100vw;
+    background-color: $background-color;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.hr-separador {
+    width: 100vw;
+}
+
+
+@media (min-width: 768px) {
+
+    .scheme {
+        .imagenes {
+            display: flex;
+            justify-content: center;
+    
+            .carousel {
+                width: 767px;
+    
+                .carousel-inner {
+                    border-top-right-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+            }
+        }
+    }
+}
+

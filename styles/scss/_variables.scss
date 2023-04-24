@@ -1,0 +1,27 @@
+// GENERALES //
+
+$primary-color: #558b3e;
+$secondary-color: rgb(255, 249, 239);
+$background-color: #227000;
+$background-text-color: #ccffc286;
+
+// HEADER //
+
+$header-image: url("../../../img/fondos/fondoheader.jpg");
+
+// H1 //
+
+$h1-font-family: 'Tilt Prism', cursive;
+$h1-text-shadow: (
+    white 0 0,
+    white 0 0,
+    white 0 0,
+    black -0.1em 0.1em 2px,
+    black 0.1em 0.1em 2px
+);
+
+// BODY //
+
+$body-image: url(../../img/fondos/fondobody.png);
+$body-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+

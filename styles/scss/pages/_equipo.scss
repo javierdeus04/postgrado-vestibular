@@ -1,0 +1,73 @@
+@import "../base";
+
+.scheme {
+   
+    .img-equipo {
+        align-self: center;
+    }
+
+    .id-perfil {
+        li {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .facilitadores {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .facilitadores-info-desktop {
+            display: none;
+        }
+    }
+
+    .card {
+        background-color: $background-text-color;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .scheme {
+        .equipo {
+
+            display: grid;
+            grid-template-columns: 1fr 5fr 5fr 1fr;
+
+            h3 {
+                grid-column: span 4;
+            }
+
+            .primary-container {
+                grid-column: 2 / 4;
+
+                .resp-acad {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+                }
+
+                .facilitadores {
+
+                    gap: 1em;
+
+                    .facilitadores-info-mobile {
+                        display: none;
+                    }
+                
+                    .facilitadores-info-desktop {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

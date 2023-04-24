@@ -1,5 +1,4 @@
-@import "../base";
-
+/* // ESTILOS DE BOTONES // */
 .btn {
     background-color: $secondary-color;
     color: $primary-color;
@@ -11,5 +10,6 @@
         cursor: pointer;
         color: $secondary-color;
         background-color: $background-color;
+        border-color: $secondary-color;
     }
 }

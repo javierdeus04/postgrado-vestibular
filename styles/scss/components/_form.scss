@@ -1,0 +1,21 @@
+/* // ESTILOS DEL FORMULARIO // */
+.contacto-consultas {
+    @extend .contacto-inscripciones;
+
+    .campo-formulario {
+        @extend .scheme;
+        align-self: normal;
+        gap: 0;
+        text-align: center;
+    }
+}
+
+/* Estilos Desktop */
+@media (min-width: 768px) {
+    .contacto-consultas {
+        align-items: flex-start;
+        .campo-formulario {
+            text-align: left;
+        }
+    }
+}

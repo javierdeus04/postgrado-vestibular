@@ -1,5 +1,4 @@
-@import "../base";
-
+/* // ELEMENTOS PROPIOS DE EQUIPO // */
 .scheme {
    
     .img-equipo {
@@ -11,29 +10,37 @@
             text-decoration: underline;
             text-align: center;
         }
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    .facilitadores {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        .facilitadores-info-desktop {
-            display: none;
-        }
     }
 
     .card {
         background-color: $background-text-color;
     }
-
 }
 
+.facilitadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .id-perfil {
+        
+        &:hover {
+            cursor: pointer;
+            color: $secondary-color;
+        }
+
+        &:visited {
+            color: red;
+        }
+    }
+
+    .facilitadores-info-desktop {
+        display: none;
+    }
+}
+
+/* Estilos Desktop */
 @media (min-width: 768px) {
 
     .scheme {

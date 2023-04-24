@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logovestibular.png" type="image/x-icon">
-    <title>Rehabilitacion vestibular</title>
+    <title>Postgrado Rehabilitacion Vestibular</title>
 </head>
 
 <body>
     <header class="header header-scheme">
+        <!-- LOGO -->
         <div class="header-logo">
             <a href="./index.html"><img src="./img/logos/logovestibular.png" alt="Logo rehabilitacion vestibular y trastornos del equilibrio - curso de postgrado" title="Rehabilitación vestibular - Trastornos del equilibrio"></a>
         </div>
 
+        <!-- TITULO -->
         <div class="header-titulo">            
             <h1>Rehabilitación vestibular y alteraciones del equilibrio</h1>   
             <h2>Curso superior nivel de postgrado</h2>
         </div>
 
+        <!-- BARRA DE NAVEGACION -->
         <nav>
+            <!-- MENU HAMBURGUESA (VSTA MOBILE) -->
             <div class="navbar .bg-transparent">
                 <div class="container-fluid" data-bs-theme="dark">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -58,6 +63,7 @@
                 </div>
             </div>
 
+            <!-- MENU LISTA (VISTA DESKTOP) -->
             <ul class="header-menu">
                 <a href="./index.html"><li class="btn">Presentación</li></a>
                 <a href="./pages/objetivos.html"><li class="btn">Objetivos</li></a>
@@ -69,9 +75,11 @@
     </header>
 
     <main class="scheme">
+        <!-- CONTENIDO PRINCIPAL -->
         <section class="index">
             <h3>Presentación | IV Edición</h3>
 
+            <!-- TEXTO PRINCIPAL -->            
             <div class="primary-container">
                 <h4>Qué es?</h4>
                 <p>
@@ -97,7 +105,8 @@
                     <span>Destinado a: </span>Kinesiólogos, Fisioterapeutas, Lic. en Kinesiología y Fisioterapia, Audiólogos, Fonoaudiólogos, Orl.
                 </p>
             </div>
-            
+
+            <!-- IMAGENES DECORATIVAS -->            
             <div class="decoration">
                 <img src="./img/decoracion/que-es.svg" alt="Question">
                 <hr>
@@ -106,11 +115,13 @@
                 <img src="./img/decoracion/profesionales.svg" alt="Professionals">
             </div>
         </section>
-        
+
+        <!-- SEPARARDOR -->        
         <hr class="hr-separador">
-        <span class="separador">"Hay que buscar el buen equilibrio en el movimiento y no en la quietud." - Bruce Lee</span>
+        <span data-aos="flip-left" class="separador">"Hay que buscar el buen equilibrio en el movimiento y no en la quietud." - Bruce Lee</span>
         <hr class="hr-separador">
 
+        <!-- CARRUSEL DE IMAGENES -->
         <section class="imagenes">
             <div id="fotos-curso" class="carousel carousel-dark slide">
                 <div class="carousel-indicators">
@@ -144,6 +155,7 @@
     <footer class="footer scheme">
         <h5>Avalan</h5>
         
+        <!-- LOGOS ORGANIZACIONES AVALADORAS -->
         <div>
             <div class="footer-logos scheme">
                 <img src="./img/logos/logockfmendoza.png" alt="Logo Colegio de Kinesiólogos y Fisioterapeutas de Mendoza" title="Colegio de Kinesiólogos y Fisioterapeutas de Mendoza">
@@ -163,7 +175,11 @@
             <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
           </svg> 2023 | Javier Deus</h6>
     </footer>
-    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

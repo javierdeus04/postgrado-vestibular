@@ -84,11 +84,12 @@ span {
     .index {
         display: grid;
         grid-template-columns: 1fr 5fr 3fr 1fr;
-        grid-template-rows: 1fr 10fr;
+        grid-template-rows: auto;
 
         h3 {
             grid-column: span 4;
             align-self: center;
+            margin: 1em;
         }
 
         .primary-container {

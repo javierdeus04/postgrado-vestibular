@@ -48,9 +48,11 @@
 
             display: grid;
             grid-template-columns: 1fr 5fr 5fr 1fr;
+            grid-template-rows: auto;
 
             h3 {
                 grid-column: span 4;
+                margin: 1em;
             }
 
             .primary-container {

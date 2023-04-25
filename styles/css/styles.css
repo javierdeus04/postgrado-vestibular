@@ -78,11 +78,12 @@ span {
   .index {
     display: grid;
     grid-template-columns: 1fr 5fr 3fr 1fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: auto;
   }
   .index h3 {
     grid-column: span 4;
     align-self: center;
+    margin: 1em;
   }
   .index .primary-container {
     grid-row: 2;
@@ -323,9 +324,11 @@ span {
   .scheme .equipo, .contacto-inscripciones .equipo, .contacto-consultas .equipo {
     display: grid;
     grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: auto;
   }
   .scheme .equipo h3, .contacto-inscripciones .equipo h3, .contacto-consultas .equipo h3 {
     grid-column: span 4;
+    margin: 1em;
   }
   .scheme .equipo .primary-container, .contacto-inscripciones .equipo .primary-container, .contacto-consultas .equipo .primary-container {
     grid-column: 2/4;

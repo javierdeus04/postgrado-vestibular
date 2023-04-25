@@ -3,4 +3,22 @@
     @extend .scheme;
     align-items: center;
     padding: 1em;
+
+    a {
+        font-size: 0.997rem;
+    }
+}
+
+
+.instagram {
+
+    @extend .scheme;
+    margin-top: 1.5em;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .instagram {
+        display: none;
+    }
 }

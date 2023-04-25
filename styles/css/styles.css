@@ -36,7 +36,7 @@ span {
 }
 
 /* // CONTENEDORES GENERALES // */
-.scheme, .contacto-inscripciones, .contacto-consultas, .contacto-consultas .campo-formulario {
+.scheme, .instagram, .contacto-inscripciones, .contacto-consultas, .contacto-consultas .campo-formulario {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -218,14 +218,14 @@ span {
 }
 /* // ESTILOS DEL CARRUSEL // */
 @media (min-width: 768px) {
-  .scheme .imagenes, .contacto-inscripciones .imagenes, .contacto-consultas .imagenes {
+  .scheme .imagenes, .instagram .imagenes, .contacto-inscripciones .imagenes, .contacto-consultas .imagenes {
     display: flex;
     justify-content: center;
   }
-  .scheme .imagenes .carousel, .contacto-inscripciones .imagenes .carousel, .contacto-consultas .imagenes .carousel {
+  .scheme .imagenes .carousel, .instagram .imagenes .carousel, .contacto-inscripciones .imagenes .carousel, .contacto-consultas .imagenes .carousel {
     width: 767px;
   }
-  .scheme .imagenes .carousel .carousel-inner, .contacto-inscripciones .imagenes .carousel .carousel-inner, .contacto-consultas .imagenes .carousel .carousel-inner {
+  .scheme .imagenes .carousel .carousel-inner, .instagram .imagenes .carousel .carousel-inner, .contacto-inscripciones .imagenes .carousel .carousel-inner, .contacto-consultas .imagenes .carousel .carousel-inner {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border: solid rgb(255, 249, 239) 10px;
@@ -291,14 +291,14 @@ span {
 }
 
 /* // ELEMENTOS PROPIOS DE EQUIPO // */
-.scheme .img-equipo, .contacto-inscripciones .img-equipo, .contacto-consultas .img-equipo {
+.scheme .img-equipo, .instagram .img-equipo, .contacto-inscripciones .img-equipo, .contacto-consultas .img-equipo {
   align-self: center;
 }
-.scheme .id-perfil li, .contacto-inscripciones .id-perfil li, .contacto-consultas .id-perfil li {
+.scheme .id-perfil li, .instagram .id-perfil li, .contacto-inscripciones .id-perfil li, .contacto-consultas .id-perfil li {
   text-decoration: underline;
   text-align: center;
 }
-.scheme .card, .contacto-inscripciones .card, .contacto-consultas .card {
+.scheme .card, .instagram .card, .contacto-inscripciones .card, .contacto-consultas .card {
   background-color: rgba(204, 255, 194, 0.5254901961);
 }
 
@@ -321,30 +321,30 @@ span {
 
 /* Estilos Desktop */
 @media (min-width: 768px) {
-  .scheme .equipo, .contacto-inscripciones .equipo, .contacto-consultas .equipo {
+  .scheme .equipo, .instagram .equipo, .contacto-inscripciones .equipo, .contacto-consultas .equipo {
     display: grid;
     grid-template-columns: 1fr 5fr 5fr 1fr;
     grid-template-rows: auto;
   }
-  .scheme .equipo h3, .contacto-inscripciones .equipo h3, .contacto-consultas .equipo h3 {
+  .scheme .equipo h3, .instagram .equipo h3, .contacto-inscripciones .equipo h3, .contacto-consultas .equipo h3 {
     grid-column: span 4;
     margin: 1em;
   }
-  .scheme .equipo .primary-container, .contacto-inscripciones .equipo .primary-container, .contacto-consultas .equipo .primary-container {
+  .scheme .equipo .primary-container, .instagram .equipo .primary-container, .contacto-inscripciones .equipo .primary-container, .contacto-consultas .equipo .primary-container {
     grid-column: 2/4;
   }
-  .scheme .equipo .primary-container .resp-acad, .contacto-inscripciones .equipo .primary-container .resp-acad, .contacto-consultas .equipo .primary-container .resp-acad {
+  .scheme .equipo .primary-container .resp-acad, .instagram .equipo .primary-container .resp-acad, .contacto-inscripciones .equipo .primary-container .resp-acad, .contacto-consultas .equipo .primary-container .resp-acad {
     display: flex;
     flex-direction: row;
     gap: 1em;
   }
-  .scheme .equipo .primary-container .facilitadores, .contacto-inscripciones .equipo .primary-container .facilitadores, .contacto-consultas .equipo .primary-container .facilitadores {
+  .scheme .equipo .primary-container .facilitadores, .instagram .equipo .primary-container .facilitadores, .contacto-inscripciones .equipo .primary-container .facilitadores, .contacto-consultas .equipo .primary-container .facilitadores {
     gap: 1em;
   }
-  .scheme .equipo .primary-container .facilitadores .facilitadores-info-mobile, .contacto-inscripciones .equipo .primary-container .facilitadores .facilitadores-info-mobile, .contacto-consultas .equipo .primary-container .facilitadores .facilitadores-info-mobile {
+  .scheme .equipo .primary-container .facilitadores .facilitadores-info-mobile, .instagram .equipo .primary-container .facilitadores .facilitadores-info-mobile, .contacto-inscripciones .equipo .primary-container .facilitadores .facilitadores-info-mobile, .contacto-consultas .equipo .primary-container .facilitadores .facilitadores-info-mobile {
     display: none;
   }
-  .scheme .equipo .primary-container .facilitadores .facilitadores-info-desktop, .contacto-inscripciones .equipo .primary-container .facilitadores .facilitadores-info-desktop, .contacto-consultas .equipo .primary-container .facilitadores .facilitadores-info-desktop {
+  .scheme .equipo .primary-container .facilitadores .facilitadores-info-desktop, .instagram .equipo .primary-container .facilitadores .facilitadores-info-desktop, .contacto-inscripciones .equipo .primary-container .facilitadores .facilitadores-info-desktop, .contacto-consultas .equipo .primary-container .facilitadores .facilitadores-info-desktop {
     display: block;
   }
 }
@@ -352,6 +352,20 @@ span {
 .contacto-inscripciones, .contacto-consultas {
   align-items: center;
   padding: 1em;
+}
+.contacto-inscripciones a, .contacto-consultas a {
+  font-size: 0.997rem;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .instagram {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

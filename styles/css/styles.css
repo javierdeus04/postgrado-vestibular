@@ -7,7 +7,7 @@
 
 /* // ETIQUETAS // */
 body {
-  background-image: url(../../img/fondos/fondobody.png);
+  background-image: url("../../img/fondos/fondobody.png");
   background-color: #227000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
@@ -94,6 +94,7 @@ span {
     grid-column: 3;
     justify-self: center;
     align-self: center;
+    width: 250px;
   }
   .index .decoration img {
     width: 250px;
@@ -209,6 +210,9 @@ span {
     font-weight: 600;
     border-radius: 1em;
     width: 8em;
+  }
+  .header .header-menu .btn:hover {
+    transform: scale(1, 1.25);
   }
 }
 /* // ESTILOS DEL CARRUSEL // */
